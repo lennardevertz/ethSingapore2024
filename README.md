@@ -1,46 +1,79 @@
-# Getting Started with Create React App
+# On-Chain Calendar App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An application that enables users to create calendars, schedule appointments, and manage stakes via Ethereum smart contracts.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### Create Calendar
+- Define a stake amount and call length.
+- Stake amount is required to schedule appointments.
+- Call length specifies the duration of each appointment.
 
-### `npm start`
+### Update Calendar
+- Modify stake amount and call length for existing calendars.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Schedule Appointment
+- Schedule appointments with calendar owners by staking the required amount.
+- Select specific dates and times for appointments.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Withdraw Stakes
+- View available balance from the balances mapping in the smart contract.
+- Withdraw available stakes directly from the contract.
 
-### `npm test`
+### My Appointments
+- View scheduled and received appointments.
+- Calendar owners can confirm or deny attendance.
+- Appointments are sorted by date and time.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### View Appointment
+- Access detailed information about individual appointments.
 
-### `npm run build`
+### Login/Logout
+- Connect and disconnect Ethereum wallets (e.g., MetaMask).
+- Session management for user authentication.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tech Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Frontend
+- React with TypeScript
+- Tailwind CSS for styling
+- `ethers.js` for blockchain interactions
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Smart Contracts
+- Solidity for contract development
+- Ethereum blockchain
+- Remix for deployment
 
-### `npm run eject`
+### Network
+- Sepolia Testnet for testing and development
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Contract
+- 0x88751b2Be2578825E8b7662d74f63639D0C10222
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Prerequisites
+- Node.js and npm
+- MetaMask browser extension
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Installation
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Clone the Repository:  
+  
+```bash  
+git clone https://github.com/lennardevertz/ethSingapore2024.git  
+cd ethSingapore2024  
+```
+  
+Install Dependencies:  
+  ```bash
+npm install  
+ ``` 
+  
+### Running the Application  
+Start the app:  
+  
+ ```bash
+npm start  
+```
+Access the app at http://localhost:3000/.
